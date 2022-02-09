@@ -17,6 +17,11 @@ body {
 
 .modal {
   background: white;
+  display: flex;
+  flex-shrink: 2;
+  align-items:start;
+  gap: 1em;
+  padding: 20px;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
@@ -27,6 +32,9 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
+  justify-self: start;
+  align-items: start;
+  flex-shrink: 0;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -35,8 +43,17 @@ body {
   justify-content: center;
 }
 
+.header{
+  align-self: start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .close-button {
   background: #eee;
+  justify-self: flex-end;
+  align-self: center;
+  margin-left:auto;
   border-radius: 50%;
   color: #888;
   font-weight: 400;
@@ -46,6 +63,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.other-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 button {
